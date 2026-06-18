@@ -1,0 +1,105 @@
+---
+title: "How to Create and Send Invoices to Parents in Fleedu"
+sidebarTitle: "Invoices"
+description: "Learn how to generate itemized invoices, send them to parents, track payment status, and handle cash payments — all from the Fleedu dashboard."
+---
+
+Invoices are the primary way your school communicates payment expectations to parents. Fleedu lets you build itemized invoices — covering tuition, activity fees, field trips, uniforms, or any other charge — and deliver them directly to parents through the app or email. Once sent, Fleedu tracks each invoice's status and sends automated reminders so your administrative team spends less time chasing payments.
+
+## Creating an Invoice
+
+You can create an invoice for any enrolled student at any time from the Billing section of your dashboard.
+
+<Steps>
+  <Step title="Open the Billing Dashboard">
+    Navigate to **Billing** in the left-hand sidebar, then click **Invoices**. You will see a list of all existing invoices. Click the **+ New Invoice** button in the top-right corner to begin.
+  </Step>
+  <Step title="Select the Student">
+    Use the search field to find the student this invoice is for. You can search by the child's name or by classroom. Once you select a student, their enrolled class and parent contact details will populate automatically.
+  </Step>
+  <Step title="Add Line Items">
+    Click **+ Add Item** to add each charge. For every line item, enter:
+    - **Description** — e.g., *Monthly Tuition – July 2025*, *Art Class Fee*, *Field Trip to Museum*
+    - **Quantity** — typically `1` for flat fees
+    - **Unit Price** — the amount in IDR
+
+    You can add as many line items as needed. Fleedu will calculate the subtotal and total automatically.
+  </Step>
+  <Step title="Set the Due Date">
+    Choose a due date from the date picker. Fleedu will use this date to schedule automatic payment reminders and to flag the invoice as **Overdue** if it remains unpaid after this date.
+  </Step>
+  <Step title="Review and Save">
+    Review all line items, the total amount, and the parent's contact details. Click **Save Invoice** to store it as a draft, or proceed directly to sending it.
+  </Step>
+</Steps>
+
+## Sending the Invoice to Parents
+
+Once your invoice is saved, you can deliver it to the parent immediately.
+
+On the invoice detail page, click **Send Invoice**. Fleedu will dispatch the invoice through both the Fleedu parent app (as a push notification and in-app message) and to the parent's registered email address. The invoice will appear in the parent's **Billing** tab with the full itemized breakdown and the payment instructions.
+
+<Tip>
+  If you need to send the same invoice to a co-parent or guardian, open the student's profile and ensure both contacts are listed under **Billing Recipients** before clicking Send Invoice. Both parties will receive a copy.
+</Tip>
+
+## Automatic Payment Reminders
+
+Fleedu takes the follow-up work off your plate by sending parents automated reminders based on the invoice due date:
+
+- **3 days before** the due date — a friendly heads-up reminder
+- **On the due date** — a payment due notification
+- **3 days after** the due date — an overdue notice if the invoice is still unpaid
+
+<Note>
+  Reminder schedules apply to all invoices by default. You can adjust the reminder timing globally under **Settings → Billing → Reminder Schedule**, but you cannot disable reminders on a per-invoice basis.
+</Note>
+
+## Tracking Invoice Status
+
+Every invoice in Fleedu carries one of three statuses, visible from the invoice list and the student's billing history:
+
+| Status | Meaning |
+|---|---|
+| **Pending** | The invoice has been sent and is awaiting payment before the due date. |
+| **Paid** | Payment has been received and confirmed, either automatically or manually. |
+| **Overdue** | The due date has passed without a confirmed payment. |
+
+Use the filter bar at the top of the Invoices list to view invoices by status, date range, or classroom. This makes it easy to identify outstanding balances at a glance.
+
+## How Parents Pay
+
+Parents pay their invoices via **Virtual Account (VA)** bank transfer. When a parent opens an invoice in the Fleedu app, they see a unique Virtual Account number assigned to your school. The parent transfers the exact invoice amount to that VA number through any Indonesian bank's mobile banking, internet banking, or ATM. Fleedu verifies the transfer in real time and marks the invoice as **Paid** automatically — no manual reconciliation required.
+
+Funds are settled directly into your school's registered payment gateway account, typically within one business day depending on your payment gateway provider's settlement schedule.
+
+<Info>
+  Each Virtual Account number is unique to an individual invoice. This means Fleedu can match incoming transfers precisely to the correct invoice, eliminating mis-allocation errors even when multiple invoices are outstanding at the same time.
+</Info>
+
+## Manually Marking an Invoice as Paid
+
+If a parent pays in cash at the front desk or makes a direct bank transfer outside the Virtual Account system, Fleedu will not detect the payment automatically. In these cases, an authorized staff member can mark the invoice as paid manually.
+
+<Steps>
+  <Step title="Open the Invoice">
+    From **Billing → Invoices**, locate the invoice and click on it to open the detail view.
+  </Step>
+  <Step title="Click Mark as Paid">
+    Click the **Mark as Paid** button in the top-right corner of the invoice detail page.
+  </Step>
+  <Step title="Enter Payment Details">
+    A confirmation dialog will appear. Select the payment method (Cash or Manual Transfer), enter the date payment was received, and add an optional note (e.g., *Received by Ibu Sari, front desk, 10 July 2025*).
+  </Step>
+  <Step title="Confirm">
+    Click **Confirm**. The invoice status will update to **Paid** and the parent will receive an in-app and email confirmation that their payment has been recorded.
+  </Step>
+</Steps>
+
+<Warning>
+  Manual payment records are final. Once an invoice is marked as paid, the status cannot be reversed without contacting Fleedu support. Ensure you have confirmed receipt of the physical cash or bank confirmation slip before marking the invoice as paid.
+</Warning>
+
+## Refund Policy
+
+Fleedu does not process refunds for payments collected through the platform on behalf of your school. All billing terms — including refund and cancellation policies — are set by your school and communicated to parents in your enrollment agreement. If a payment dispute arises, resolve it directly with the parent according to your school's terms, then use the manual payment tools above (or contact support) to adjust records as needed.

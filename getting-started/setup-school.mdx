@@ -1,0 +1,128 @@
+---
+title: "Configure Your School Profile and Classes in Fleedu"
+sidebarTitle: "School Setup"
+description: "Configure your school's profile, create classes, invite staff, add your first student, and connect a payment gateway after registering on Fleedu."
+hidden: true
+---
+
+After creating your Fleedu account, the next task is building the foundational structure your school operates from. Fleedu organizes everything — attendance, billing, parent communications, and activity logs — around your school profile, so taking a few minutes now to set it up correctly will save you significant effort later. This guide walks you through each configuration step in the recommended order.
+
+<Note>
+  All data you enter in Fleedu — student records, payment history, activity logs, and documents — belongs exclusively to your school or foundation. Fleedu does not share your institutional data with third parties. You can export your data at any time from the account settings page.
+</Note>
+
+## Complete Your School Setup
+
+<Steps>
+  <Step title="Fill In Your School Profile">
+    From the Fleedu dashboard, navigate to **Settings → School Profile**. Complete each field in the profile form:
+
+    - **School Name** — Confirm or update the name entered during registration. This name appears on all invoices, parent notifications, and reports.
+    - **Logo** — Upload your school's logo (PNG or JPG, recommended size 400×400 px). The logo appears in the Parent App and on printed or PDF invoices.
+    - **Address** — Enter your school's full street address, city, and postal code. If you have multiple branches, this is the address for the current organization (you can add branches separately).
+    - **Phone Number & Email** — Provide the main contact details parents and guardians will use to reach your school. These are displayed in the Parent App and on billing documents.
+    - **Principal / Director Name** — The name of the responsible party shown on official documents.
+
+    Click **Save Profile** when finished.
+
+    <Tip>
+      A complete school profile builds trust with parents from day one. Parents see your logo and contact information the first time they open the Parent App — a polished profile signals that your school is organized and professional.
+    </Tip>
+  </Step>
+  <Step title="Create Your First Class or Learning Group">
+    Classes (or learning groups) are the primary containers that link students, teachers, schedules, and activities together. To create one, go to **Administration → Classes → Add Class**.
+
+    Provide the following details:
+
+    - **Class Name** — For example, _Kelompok A_, _Toddler Room_, or _Pre-K 2024/2025_.
+    - **Age Range** — The minimum and maximum age of children in this group. This helps Fleedu filter appropriate developmental milestones.
+    - **Capacity** — The maximum number of students the class can hold. Fleedu will warn you when enrollment approaches this limit.
+    - **Academic Year** — Select or create the active academic year this class belongs to.
+
+    You can create as many classes as your school needs. Each class will appear in the teacher's activity log view and on the attendance module.
+  </Step>
+  <Step title="Invite Your First Teacher or Staff Member">
+    Go to **Administration → Staff → Invite Staff**. Enter the staff member's full name, email address, and role:
+
+    - **Teacher** — Can log daily activities, manage attendance, record milestones, and communicate with parents assigned to their class.
+    - **Administrative Staff** — Has access to enrollment, billing, and reporting, but not to activity logs.
+    - **School Administrator** — Full access to all features, including settings and user management.
+
+    After you send the invitation, the staff member will receive an email prompting them to set their own password and complete their profile. Once they accept, you can assign them to one or more classes from the **Classes** screen.
+
+    <Info>
+      Invited staff members only see data relevant to their assigned classes and role. A teacher in Class A cannot view Class B's student records unless explicitly assigned to both.
+    </Info>
+  </Step>
+  <Step title="Add Your First Student">
+    Navigate to **Administration → Students → Add Student**. Fill in the student's core information:
+
+    - **Full Name** and **Date of Birth**
+    - **Class Assignment** — Assign them to the class you created in Step 2.
+    - **Enrollment Date** and **Student Status** (Active, Trial, Alumni)
+    - **Parent / Guardian Details** — Enter the primary parent's name, email address, and phone number. Fleedu will send them an invitation to the Parent App automatically.
+    - **Health Notes** — Record any allergies, medical conditions, or special requirements that teachers and staff should be aware of.
+    - **Documents** — Optionally upload a birth certificate, immunization record, or enrollment agreement.
+
+    You can add students one by one or import a list using the CSV bulk-import tool available on the Students list page.
+
+    <Tip>
+      Adding the parent's email during student enrollment is the fastest way to get families connected to the Parent App. They'll receive their invite as soon as you save the student profile.
+    </Tip>
+  </Step>
+  <Step title="Set Up Your Payment Gateway">
+    To enable invoice generation and automatic payment verification, you need to connect a payment method. Go to **Settings → Billing & Payments → Payment Gateway**.
+
+    Fleedu supports direct bank transfer verification and integrates with Indonesian payment channels. In this screen you can:
+
+    - Add your school's bank account details (bank name, account number, account holder name) so they appear on invoices.
+    - Enable **Auto-Verification**, which reconciles incoming transfers against open invoices without manual confirmation.
+    - Configure reminder schedules — for example, automatically notify parents three days before and on the invoice due date.
+
+    <Info>
+      For a full walkthrough of invoice templates, recurring billing cycles, and late-payment policies, see the [Billing & Payments documentation](/billing/invoices).
+    </Info>
+  </Step>
+  <Step title="Review Your School Dashboard">
+    With your profile, class, staff, student, and payment gateway in place, return to the main dashboard. You'll now see live data across the key widgets:
+
+    - **Enrollment Summary** — Total active students, broken down by class.
+    - **Attendance Today** — A real-time count of present, absent, and unrecorded students.
+    - **Outstanding Invoices** — The total unpaid balance across all active families.
+    - **Recent Activities** — A feed of the latest activity posts and milestone updates from teachers.
+
+    These widgets update in real time as your team works throughout the day.
+  </Step>
+</Steps>
+
+## Managing Multiple Branches
+
+If your foundation operates more than one school location, Fleedu supports multi-branch management through the **Switch Organization** feature. Each branch has its own isolated data environment — separate student records, classes, staff accounts, and billing — but you can move between them from a single login.
+
+To add a new branch, go to **Settings → Organization → Add Branch** and repeat the profile setup for the new location. From the top navigation bar, click your school name to reveal the organization switcher and jump between branches instantly.
+
+<Warning>
+  Student records, financial data, and staff accounts are not shared between branches. If a teacher works across two locations, they must be invited separately to each branch's staff roster.
+</Warning>
+
+## What's Next
+
+Your school is now ready to operate on Fleedu. Explore the rest of the documentation to go deeper on each area:
+
+<CardGroup cols={2}>
+  <Card title="Student Enrollment" icon="user-plus" href="/administration/student-enrollment">
+    Manage the full enrollment pipeline, from inquiry through to active student status.
+  </Card>
+
+  <Card title="Billing & Invoices" icon="file-invoice-dollar" href="/billing/invoices">
+    Configure fee structures, generate invoices, and automate payment reminders.
+  </Card>
+
+  <Card title="Daily Activities" icon="calendar-days" href="/activities/daily-activities">
+    Learn how teachers log activities and share them with parents in real time.
+  </Card>
+
+  <Card title="Parent App" icon="mobile-screen" href="/parents/parent-app">
+    See what the parent experience looks like and how to guide families through onboarding.
+  </Card>
+</CardGroup>

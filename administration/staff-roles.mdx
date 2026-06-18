@@ -1,0 +1,150 @@
+---
+title: "Managing Staff Accounts and Role Permissions in Fleedu"
+sidebarTitle: "Staff & Roles"
+description: "Invite teachers and staff, assign the right level of access for each role, and keep your team's permissions current as your school grows and changes."
+---
+
+Every person on your team who uses Fleedu — from a classroom teacher checking today's attendance to a principal overseeing multiple branches — gets a dedicated account with a role that defines exactly what they can see and do. You control who has access to sensitive data like billing and enrollment, and you can update or remove that access at any time. This guide explains the role system in Fleedu, walks you through inviting a new staff member, and covers how to manage your team as it grows.
+
+## Role Types in Fleedu
+
+Fleedu uses three built-in roles. Each role is designed around a real job function so that staff members only see what is relevant to their work, and sensitive administrative functions remain protected.
+
+| Role | Who It's For | Access Level |
+|---|---|---|
+| **Admin** | School principal, owner, or office manager | Full access to all features: enrollment, billing, class management, staff management, reports, and settings |
+| **Teacher** | Classroom teachers and co-teachers | Access to their assigned class(es): attendance, daily reports, activities, child development records, and parent messaging |
+| **Staff** | Administrative assistants, front-desk staff | Limited admin access: can view enrollment and student profiles, manage attendance, and generate basic reports — but cannot access billing or staff management |
+
+<Info>
+  Only users with the **Admin** role can invite new staff members, change roles, manage billing, and access school-wide settings. If you need to make someone an Admin, your own account must also be an Admin.
+</Info>
+
+---
+
+## Inviting a New Staff Member
+
+<Steps>
+  <Step title="Open Staff Management">
+    From your Fleedu dashboard, go to **Administration → Staff**. You will see a list of all current team members, their roles, and their account status (Active, Invited, or Deactivated).
+  </Step>
+
+  <Step title="Click Invite Staff Member">
+    Click the **+ Invite Staff Member** button in the top-right corner. An invitation form will appear.
+  </Step>
+
+  <Step title="Enter Their Details">
+    Fill in the following fields:
+
+    - **Full Name** — as you want it to appear in the system and in parent-facing communications
+    - **Email Address** — the invitation will be sent here; they will use this email to log in
+    - **Role** — select Admin, Teacher, or Staff (see the table above)
+    - **Assigned Class(es)** — for Teachers, select the class or classes they are responsible for; this can be updated later
+
+    <Tip>
+      If you are inviting a teacher, assign their class immediately so that they have the correct data access from the moment they accept the invitation. They will not be able to see any student data until a class is assigned to them.
+    </Tip>
+  </Step>
+
+  <Step title="Send the Invitation">
+    Click **Send Invitation**. Fleedu sends an email to the address you entered, containing a secure link to set up their password and activate their account. The staff member's entry in your team list will show a status of **Invited** until they accept.
+  </Step>
+
+  <Step title="Staff Member Accepts and Sets Up Their Account">
+    When the staff member clicks the link in their email, they are prompted to create a password and complete their profile (display name and profile photo). Once done, their status changes to **Active** and they can log in immediately.
+
+    <Note>
+      Invitation links expire after **7 days**. If a staff member does not accept in time, go to **Administration → Staff**, find their name, and click **Resend Invitation** to generate a new link.
+    </Note>
+  </Step>
+</Steps>
+
+---
+
+## Managing Permissions Per Role
+
+Fleedu's built-in roles cover most school structures, but you can fine-tune what a Staff role member can access within their permission scope.
+
+<CardGroup cols={2}>
+  <Card title="Admin Permissions" icon="key">
+    Admins have unrestricted access by design. This cannot be limited — if a team member should not have full access, assign them the Staff role instead.
+  </Card>
+  <Card title="Teacher Permissions" icon="chalkboard">
+    Teachers are scoped to their assigned classes. You can assign a teacher to multiple classes if they cover more than one group, and they will see all of those classes in their dashboard.
+  </Card>
+  <Card title="Staff Permissions" icon="id-card">
+    Staff role members can be further restricted from specific sections — for example, you may allow a front-desk assistant to view student profiles but not edit them. Toggle these sub-permissions in their staff profile under **Permissions**.
+  </Card>
+  <Card title="Changing a Role" icon="arrows-rotate">
+    To change a team member's role, open their profile from **Administration → Staff**, click **Edit Role**, select the new role, and save. The change takes effect immediately on their next page load.
+  </Card>
+</CardGroup>
+
+---
+
+## Removing or Deactivating a Staff Member
+
+When a staff member leaves your school, you should remove their Fleedu access promptly to protect student and family data.
+
+1. Go to **Administration → Staff** and click the staff member's name.
+2. Scroll to the bottom of their profile and choose one of the following actions:
+
+<CardGroup cols={2}>
+  <Card title="Deactivate Account" icon="user-slash">
+    Suspends access without deleting the account or any data associated with it. Choose this option for staff on extended leave or if you may need to reactivate them later. Their name will still appear on historical records (attendance, reports) they created.
+  </Card>
+  <Card title="Remove from School" icon="trash">
+    Permanently removes the staff member from your school account. Their login access is revoked immediately. Historical records they created (daily reports, attendance entries) are retained under their name for audit purposes, but they will no longer be able to log in.
+  </Card>
+</CardGroup>
+
+<Warning>
+  Removing a staff member who is the **only Admin** on your account will leave the school without admin access. Before removing an Admin, make sure at least one other team member has the Admin role. If you are locked out of your own school account, contact Fleedu support immediately.
+</Warning>
+
+---
+
+## Managing Multiple Branches with Switch Organization
+
+If you operate more than one school location — or if a principal oversees several branches of the same network — Fleedu's **Switch Organization** feature lets you manage all of them from a single account.
+
+<Accordion title="How does Switch Organization work?">
+  When your account is granted Admin access to more than one school in Fleedu, a **Switch Organization** option appears in your account menu (top-right corner). Clicking it opens a dropdown of all the schools linked to your account. Select any school to switch your dashboard context to that location — you will see that school's classes, students, staff, and billing as if it were your primary school. Switch back at any time without logging out.
+</Accordion>
+
+<Accordion title="Who can use Switch Organization?">
+  Only users who have been added as an Admin to multiple school organizations can use this feature. A teacher at one branch will not automatically have access to another branch. Each school's admin team manages its own access independently.
+</Accordion>
+
+<Accordion title="Is data shared between branches?">
+  No. Each school organization in Fleedu is a separate data environment. Students, staff, classes, and billing records from one branch are not visible to another branch, even for accounts with Switch Organization access. You are simply switching your view — not merging data.
+</Accordion>
+
+<Accordion title="How do I get Switch Organization set up for my network?">
+  Contact Fleedu support and provide the names and registered email addresses of the school accounts you want to link under one principal account. The Fleedu team will configure the multi-organization access for you. There is no additional charge for this feature.
+</Accordion>
+
+---
+
+## Staff Management Quick Reference
+
+<CardGroup cols={3}>
+  <Card title="Invite a Staff Member" icon="envelope">
+    Administration → Staff → + Invite Staff Member
+  </Card>
+  <Card title="Change a Role" icon="pen-to-square">
+    Administration → Staff → [Name] → Edit Role
+  </Card>
+  <Card title="Deactivate Access" icon="toggle-off">
+    Administration → Staff → [Name] → Deactivate Account
+  </Card>
+  <Card title="Resend Invitation" icon="paper-plane">
+    Administration → Staff → [Name] → Resend Invitation
+  </Card>
+  <Card title="Assign Classes" icon="chalkboard-user">
+    Administration → Staff → [Name] → Assigned Classes
+  </Card>
+  <Card title="Switch Organization" icon="building-user">
+    Account Menu (top-right) → Switch Organization
+  </Card>
+</CardGroup>

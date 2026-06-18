@@ -1,0 +1,100 @@
+{
+  "projectType": "saas",
+  "projectName": "Fleedu",
+  "projectDescription": "Fleedu is a childcare and early childhood education management platform that helps schools, teachers, and parents streamline administration, billing, activity tracking, and child development reporting.",
+  "theme": "almond",
+  "primaryColor": "#6b3dec",
+  "lightColor": "#b490e0",
+  "darkColor": "#6b3dec",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Guide",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "introduction",
+              "getting-started/register",
+              "getting-started/setup-school"
+            ]
+          },
+          {
+            "group": "Administration",
+            "pages": [
+              "administration/student-enrollment",
+              "administration/class-management",
+              "administration/staff-roles"
+            ]
+          },
+          {
+            "group": "Billing & Payments",
+            "pages": [
+              "billing/invoices",
+              "billing/recurring-billing",
+              "billing/payment-verification"
+            ]
+          },
+          {
+            "group": "Activities & Development",
+            "pages": [
+              "activities/daily-activities",
+              "activities/lesson-plans",
+              "activities/milestone-tracking",
+              "activities/attendance"
+            ]
+          },
+          {
+            "group": "Parent Engagement",
+            "pages": [
+              "parents/parent-app",
+              "parents/activity-feed",
+              "parents/invite-family"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Updates & Legal",
+        "groups": [
+          {
+            "group": "Product Updates",
+            "pages": [
+              "updates/changelog"
+            ]
+          },
+          {
+            "group": "Legal",
+            "pages": [
+              "legal/privacy-policy",
+              "legal/terms-of-service"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Online student enrollment with digital registration forms",
+    "Automated invoice generation and payment reminders",
+    "Real-time payment verification via payment gateway",
+    "Daily activity sharing with photos and videos",
+    "Child development milestone tracking and reporting",
+    "Lesson plan creation and curriculum customization",
+    "QR code-based student attendance",
+    "Parent mobile app for real-time child monitoring",
+    "Multi-branch management from a single account",
+    "Family access sharing (Invite Family feature)"
+  ],
+  "publicApiSurface": [
+    "Student enrollment form submission",
+    "Invoice creation and management",
+    "Recurring billing configuration",
+    "Activity post (photo/video/note sharing)",
+    "Attendance recording (manual and QR scan)",
+    "Milestone and lesson plan management",
+    "Daily activity report generation",
+    "Parent and family account invitations",
+    "Multi-organization (branch) switching"
+  ]
+}

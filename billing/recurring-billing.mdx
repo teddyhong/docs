@@ -1,0 +1,106 @@
+---
+title: "Automate Monthly Tuition with Recurring Billing in Fleedu"
+sidebarTitle: "Recurring Billing"
+description: "Set up a recurring billing schedule once and let Fleedu automatically generate and send monthly tuition invoices for every enrolled student."
+---
+
+Recurring billing eliminates the most repetitive task in school administration: creating the same tuition invoices every month, for every student, in every class. With Fleedu's recurring billing feature, you define a schedule once — specifying the class or student group, the amount, and the billing date — and Fleedu automatically generates, addresses, and sends invoices to parents each cycle without any further action from your team. This page walks you through setting up, managing, and cancelling recurring billing schedules.
+
+## What Is Recurring Billing?
+
+A recurring billing schedule is a saved rule that instructs Fleedu to generate invoices on a repeating cycle. For example, you might create a schedule that charges every student in **Kelas Matahari** IDR 1,500,000 on the **1st of every month** starting from **August 2025**. Each month, on that date, Fleedu creates an individual invoice for each student covered by the schedule and sends it to their parent — just as if you had created each invoice by hand, but without you lifting a finger.
+
+<Note>
+  Recurring billing is a one-time setup per class or student group. Once active, the schedule runs automatically until you pause or cancel it. You do not need to log in each month to trigger invoice generation.
+</Note>
+
+## Setting Up a Recurring Billing Schedule
+
+<Steps>
+  <Step title="Go to Recurring Billing">
+    In the left-hand sidebar, navigate to **Billing → Recurring Billing**. Click **+ New Schedule** to open the schedule builder.
+  </Step>
+  <Step title="Name the Schedule">
+    Give your schedule a clear internal name, such as *Monthly Tuition – Kelas Matahari 2025* or *Toddler Program – Monthly Fee*. This name is for your staff's reference only and will not appear on parent-facing invoices.
+  </Step>
+  <Step title="Select the Class or Student Group">
+    Choose whether this schedule applies to an entire **Class** or to a manually selected group of **Individual Students**.
+
+    - **Class** — All currently enrolled students in the selected class will be billed. If a new student joins the class after the schedule is active, they will be included in the next billing cycle automatically.
+    - **Individual Students** — Use this option for custom groups, such as students enrolled in an optional after-school program.
+  </Step>
+  <Step title="Configure the Line Items">
+    Add the charge(s) that will appear on each generated invoice. Click **+ Add Item** and fill in:
+    - **Description** — e.g., *Monthly Tuition*, *Extracurricular Fee – Music*
+    - **Amount (IDR)** — the fixed monthly charge per student
+
+    You can include multiple line items if parents are billed for more than one recurring fee in the same cycle.
+  </Step>
+  <Step title="Set the Billing Cycle">
+    Choose how often invoices are generated:
+
+    - **Monthly** — invoices are created once per month
+    - **Quarterly** — invoices are created every three months *(available on Pro and above plans)*
+
+    Then set the **Day of Month** on which invoices should be generated and sent — for example, **1** for the 1st of each month or **25** for the last week of the preceding month.
+  </Step>
+  <Step title="Set the Start Date">
+    Choose the date from which the schedule becomes active. The first invoices will be generated on the next occurrence of your chosen billing day that falls on or after this start date.
+
+    For example: if you set a billing day of the 1st and a start date of 20 July, the first batch of invoices will be created on 1 August.
+  </Step>
+  <Step title="Review and Activate">
+    Review the summary — schedule name, class or students covered, invoice amount, billing day, and start date. Click **Activate Schedule** to save and enable it. Fleedu will confirm activation and show you the date of the next scheduled invoice run.
+  </Step>
+</Steps>
+
+<Tip>
+  Set your billing day a few days before tuition is actually due — for instance, generate invoices on the 25th with a payment due date of the 5th of the following month. This gives parents enough time to arrange their payment while keeping your cash flow predictable.
+</Tip>
+
+## How Parents Receive Recurring Invoices
+
+When a recurring invoice is generated, parents receive the same notification they would for any manually created invoice: a push notification in the Fleedu parent app and an email to their registered address. The invoice appears in the parent's **Billing** tab with all line items, the due date, and their Virtual Account payment details. From the parent's perspective, a recurring invoice looks and functions identically to a standard invoice.
+
+## Editing a Recurring Schedule
+
+You can update an active schedule at any time. Navigate to **Billing → Recurring Billing**, click the schedule you want to modify, and select **Edit Schedule**.
+
+You can change:
+- The invoice amount or line item descriptions
+- The billing day of month
+- The set of students or classes covered
+
+<Warning>
+  Edits to a recurring schedule only affect **future** invoice cycles. Invoices that have already been generated and sent will not be altered retroactively. If you need to correct an invoice that has already been sent, open it under **Billing → Invoices** and use the **Edit Invoice** option before the parent has paid.
+</Warning>
+
+## Pausing a Recurring Schedule
+
+If you need to temporarily suspend billing — for example, during a school holiday period — you can pause a schedule without deleting it. On the schedule detail page, click **Pause Schedule**. No invoices will be generated while the schedule is paused. Click **Resume Schedule** when you are ready to restart, and billing will continue from the next upcoming billing day.
+
+## Cancelling a Recurring Schedule
+
+To permanently stop a recurring billing schedule, open it and click **Cancel Schedule**. You will be asked to confirm. Once cancelled, no further invoices will be generated under that schedule. Invoices that were already issued and are still pending payment will remain active — cancelling the schedule does not void outstanding invoices.
+
+## When a Student Is Unenrolled
+
+When a student is unenrolled from a class through Fleedu's enrollment management tools, the system automatically removes them from any recurring billing schedules tied to that class. No action is required from your billing team — the student will simply be excluded from the next invoice generation run.
+
+<Info>
+  If you unenroll a student mid-cycle — for example, on the 15th of the month when invoices run on the 1st — the current month's invoice will already have been sent. You will need to handle any pro-rated adjustments manually by editing the outstanding invoice or issuing a credit note outside the platform according to your school's policy.
+</Info>
+
+## Frequently Asked Questions
+
+<Accordion title="Can I have multiple recurring schedules for the same class?">
+  Yes. You can create separate schedules for the same class to bill different fees independently — for example, one schedule for tuition and a separate schedule for an extracurricular programme that only some students in the class have opted into.
+</Accordion>
+
+<Accordion title="What if two recurring schedules generate invoices on the same day for the same student?">
+  Fleedu will create two separate invoices. Each invoice will be sent to the parent independently. If you prefer to consolidate all monthly charges into a single invoice, combine all line items into one recurring schedule rather than running multiple schedules for the same student.
+</Accordion>
+
+<Accordion title="Can I set different amounts for different students in the same schedule?">
+  Not within a single schedule — all students in a schedule are billed the same amount. If some students have different rates (e.g., due to a sibling discount or scholarship), create a separate recurring schedule for that subset of students with the adjusted amount.
+</Accordion>

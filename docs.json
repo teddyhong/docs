@@ -1,0 +1,117 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "almond",
+  "name": "Fleedu",
+  "description": "Dokumentasi Fleedu, software dan aplikasi untuk mengelola preschool / daycare. Temukan panduan lengkap untuk membantu staf, guru, dan orang tua menghemat waktu dalam mengatur kegiatan operasional serta pembelajaran anak usia dini.",
+  "colors": {
+    "primary": "#6b3dec",
+    "light": "#b490e0",
+    "dark": "#6b3dec"
+  },
+  "favicon": {
+    "light": "/images/android-chrome-512x512.png",
+    "dark": "/images/android-chrome-512x512.png"
+  },
+  "logo": {
+    "light": "/images/Logotype-Purple.png",
+    "dark": "/images/Logotype-Purple.png"
+  },
+  "icons": {
+    "library": "lucide"
+  },
+  "styling": {
+    "eyebrows": "breadcrumbs"
+  },
+  "contextual": {
+    "options": ["copy", "view", "assistant", "mcp", "add-mcp"]
+  },
+  "navigation": {
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Home",
+          "icon": "house",
+          "href": "https://docs.fleedu.com"
+        },
+        {
+          "anchor": "What's New",
+          "icon": "scroll-text",
+          "href": "https:/docs.fleedu.com/whats-new"
+        },
+        {
+          "anchor": "Contact Us",
+          "icon": "life-buoy",
+          "href": "https://api.whatsapp.com/send?phone=6282170002201&text=Hi%20Fleedu%21"
+        }
+      ]
+    },
+    "directory": "card",
+    "tabs": [
+      {
+        "tab": "Guide",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "introduction",
+              "getting-started/register",
+              "getting-started/setup-school"
+            ],
+            "hidden": true
+          },
+          {
+            "group": "Administration",
+            "pages": [
+              "administration/student-enrollment",
+              "administration/class-management",
+              "administration/staff-roles"
+            ],
+            "hidden": true
+          },
+          {
+            "group": "Billing & Payments",
+            "pages": [
+              "billing/invoices",
+              "billing/recurring-billing",
+              "billing/payment-verification"
+            ],
+            "hidden": true
+          },
+          {
+            "group": "Activities & Development",
+            "pages": [
+              "activities/daily-activities",
+              "activities/lesson-plans",
+              "activities/milestone-tracking",
+              "activities/attendance"
+            ],
+            "hidden": true
+          },
+          {
+            "group": "Parent Engagement",
+            "pages": [
+              "parents/parent-app",
+              "parents/activity-feed",
+              "parents/invite-family"
+            ],
+            "hidden": true
+          }
+        ],
+        "hidden": true
+      }
+    ]
+  },
+  "navbar": {
+    "links": [],
+    "primary": {
+      "type": "button",
+      "label": "Get Free Demo",
+      "href": "https://web.fleedu.com/register"
+    }
+  },
+  "footer": {
+    "socials": {
+      "instagram": "https://www.instagram.com/fleedu_i"
+    }
+  }
+}

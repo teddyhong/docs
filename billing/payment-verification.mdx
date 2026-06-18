@@ -1,0 +1,126 @@
+---
+title: "Verify Payments Automatically and Manually in Fleedu"
+sidebarTitle: "Payment Verification"
+description: "Understand how Fleedu auto-verifies Virtual Account payments in real time, and learn how to manually confirm cash or off-system transfers when needed."
+---
+
+Payment verification is the process of confirming that money owed on an invoice has actually been received — and updating the invoice status accordingly. Fleedu handles the vast majority of this work for you automatically. When a parent pays via Virtual Account, Fleedu receives an instant confirmation from the payment gateway and marks the invoice as **Paid** without any involvement from your team. For cases where parents pay outside the system — such as cash at the front desk — Fleedu also provides straightforward tools for your staff to record those payments manually. This page explains both flows and covers how to view payment history and export reports.
+
+## Automatic Payment Verification
+
+When a parent pays by Virtual Account bank transfer, verification happens in real time through the following sequence:
+
+1. The parent initiates a transfer to the unique Virtual Account number shown on their invoice in the Fleedu parent app.
+2. Their bank routes the transfer to Fleedu's integrated payment gateway.
+3. The payment gateway sends an instant webhook notification to Fleedu confirming the transfer amount, the VA number, and the timestamp.
+4. Fleedu matches the notification to the correct invoice, confirms the amount matches what is owed, and updates the invoice status to **Paid**.
+5. The parent receives an in-app notification and an email receipt confirming successful payment.
+6. Your school's dashboard reflects the updated invoice status immediately.
+
+Your administrative staff do not need to check bank statements, log in to a payment gateway portal, or manually reconcile transfers. The entire verification process is handled by Fleedu in the background, typically within a few seconds of the parent completing their transfer.
+
+<Info>
+  Settled funds are transferred to your school's registered payment gateway account on the settlement schedule defined by your payment gateway agreement — typically T+1 or T+2 business days. Fleedu marks invoices as Paid upon payment confirmation, which occurs before settlement. The two events (invoice marked Paid vs. funds arriving in your account) may not happen at exactly the same time.
+</Info>
+
+## Manual Payment Verification
+
+When a parent pays by cash, cheque, or a direct bank transfer made outside the Virtual Account system, Fleedu cannot detect the payment automatically. In these situations, an authorised staff member must record the payment manually.
+
+<Steps>
+  <Step title="Locate the Invoice">
+    Navigate to **Billing → Invoices** in your dashboard. Use the search bar or filter by **Status: Pending** or **Status: Overdue** to find the relevant invoice. Click the invoice to open its detail view.
+  </Step>
+  <Step title="Click Mark as Paid">
+    On the invoice detail page, click the **Mark as Paid** button. This button is available to any staff member with the **Billing** or **Admin** role. If you do not see this button, check your role permissions under **Settings → Team**.
+  </Step>
+  <Step title="Select the Payment Method">
+    In the confirmation dialog, select the payment method used:
+    - **Cash** — for payments received in person at your school
+    - **Manual Bank Transfer** — for transfers made directly to your school's bank account outside the VA system
+  </Step>
+  <Step title="Enter the Payment Date and Reference">
+    Enter the date the payment was physically received. Optionally, add a reference note — for example, *IDR 1,500,000 cash received by Ibu Dewi, 14 July 2025* or a bank transfer reference number. This note is stored in the invoice record and is visible to other admins for audit purposes.
+  </Step>
+  <Step title="Confirm the Payment">
+    Click **Confirm Payment**. The invoice status will immediately update to **Paid**. The parent will receive an in-app notification and email confirming that their payment has been recorded by the school.
+  </Step>
+</Steps>
+
+<Warning>
+  Manually marking an invoice as paid is a permanent action. Once confirmed, the invoice status cannot be changed back to Pending or Overdue without assistance from Fleedu support. Always verify that you have received the cash or sighted the bank confirmation before clicking Confirm Payment.
+</Warning>
+
+<Tip>
+  Encourage parents to pay via Virtual Account whenever possible. Automatic verification is faster, eliminates human error, and reduces the administrative burden of manual reconciliation for your staff.
+</Tip>
+
+## Viewing Payment History
+
+Fleedu maintains a complete, timestamped record of every payment transaction associated with your school. To view payment history:
+
+1. Go to **Billing → Payment History** in the sidebar.
+2. Use the date range picker and filters to narrow results by classroom, student, or payment method (VA, Cash, Manual Transfer).
+3. Click any row to see the full transaction detail, including the invoice it corresponds to, the payment method, the amount, and who verified it (for manual payments, the staff member's name is recorded).
+
+The Payment History view shows all transactions in reverse chronological order by default, making it easy to review recent activity or investigate a specific payment.
+
+## Exporting Payment Reports
+
+You can export payment data for accounting, auditing, or reporting to school management.
+
+Navigate to **Billing → Payment History**, apply any filters you need (e.g., July 2025, all classes), and click **Export**. Fleedu generates a CSV file containing:
+
+- Invoice number
+- Student name and class
+- Parent name
+- Invoice amount (IDR)
+- Due date
+- Payment date
+- Payment method
+- Verified by (staff name, for manual payments)
+- Invoice status at time of export
+
+<Note>
+  Exports reflect the state of invoices at the moment of export. If an invoice status changes after you export (e.g., a pending invoice becomes paid), you will need to run a new export to capture the updated data.
+</Note>
+
+## Troubleshooting: Payment Not Automatically Verified
+
+In rare cases, a parent may complete a Virtual Account transfer but the invoice in Fleedu does not update to Paid. This can occur if:
+
+- The parent transferred an incorrect amount (the payment gateway requires an exact match)
+- The transfer was made to an expired or incorrect Virtual Account number
+- There was a temporary communication issue between the bank and the payment gateway
+
+If a parent reports that they have paid but the invoice still shows Pending or Overdue, follow these steps:
+
+1. Ask the parent to share their bank transfer receipt or screenshot showing the transfer amount, VA number, and timestamp.
+2. Verify that the VA number on their receipt matches the one on the invoice in Fleedu.
+3. Verify that the amount transferred exactly matches the invoice total.
+4. If both match and more than 30 minutes have elapsed since the transfer, contact **support@fleedu.com** with the invoice number, the parent's transfer receipt, and your school's registered email address. The Fleedu support team will investigate directly with the payment gateway.
+5. While awaiting resolution, you may choose to mark the invoice as paid manually (using the steps above) once you have confirmed the bank receipt, so that the parent's record is updated promptly.
+
+---
+
+## Frequently Asked Questions
+
+<Accordion title="Can parents see their payment history in the Fleedu parent app?">
+  Yes. Parents can view all invoices and payment receipts in the **Billing** section of their Fleedu parent app. Each paid invoice shows the payment date, amount, and method. They can also download individual receipts as PDF files for their own records.
+</Accordion>
+
+<Accordion title="What happens if a parent overpays via Virtual Account?">
+  If a parent transfers more than the invoice amount, the payment gateway will not match the transfer to the invoice and automatic verification will not occur. The excess funds will be held by the payment gateway and your school will need to contact the gateway provider to arrange a return of the overpaid amount. Always advise parents to transfer the exact invoice total.
+</Accordion>
+
+<Accordion title="Is there a way to verify multiple invoices as paid at once (bulk verification)?">
+  Yes. From **Billing → Invoices**, filter by Status: Pending, then select multiple invoices using the checkboxes. Click **Bulk Actions → Mark as Paid**. You will be prompted to select a payment method and enter a shared payment date. Bulk manual verification is useful when collecting cash payments on enrolment day or during school events.
+</Accordion>
+
+<Accordion title="How long does the school retain payment records in Fleedu?">
+  Fleedu retains all payment and invoice records for a minimum of 5 years in accordance with standard financial record-keeping requirements. You can access historical data at any time through the Payment History view or by exporting records.
+</Accordion>
+
+<Accordion title="Can I restrict which staff members can manually mark invoices as paid?">
+  Yes. Only staff with the **Admin** or **Billing** role can mark invoices as paid manually. You can manage role assignments under **Settings → Team Members**. It is good practice to limit manual payment permissions to designated finance staff to maintain a clear audit trail.
+</Accordion>
