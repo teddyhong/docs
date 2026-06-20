@@ -18,17 +18,13 @@
   "styling": {
     "eyebrows": "section"
   },
-  "contextual": {
-    "options": ["copy", "view", "assistant", "mcp", "add-mcp"]
-  },
   "navigation": {
     "directory": "card",
     "products": [
       {
         "product": "What's New",
         "pages": [
-          "whats-new",
-          "contact-us"
+          "whats-new"
         ]
       },
       {
