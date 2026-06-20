@@ -105,5 +105,10 @@
   "appearance": {
     "default": "light",
     "strict": true
+  },
+  "logo": {
+    "light": "/images/asset.png",
+    "dark": "/images/asset.png",
+    "href": "https://fleedu.com"
   }
 }
