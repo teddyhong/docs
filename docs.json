@@ -107,8 +107,8 @@
     "strict": true
   },
   "logo": {
-    "light": "/images/asset.png",
-    "dark": "/images/asset.png",
+    "light": "/images/Purple_50x50.png",
+    "dark": "/images/Purple_50x50.png",
     "href": "https://fleedu.com"
   }
 }
