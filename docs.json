@@ -20,11 +20,14 @@
   },
   "navigation": {
   "directory": "card",
-  "pages": [
-    "index",
-    "whats-new"
-  ],
   "tabs": [
+    {
+      "tab": "What's New",
+      "pages": [
+        "index",
+        "whats-new"
+      ]
+    },
     {
       "tab": "Guide",
       "hidden": true,
