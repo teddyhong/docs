@@ -84,10 +84,6 @@
   "navbar": {
     "links": [
       {
-        "label": "Home",
-        "href": "https://fleedu.com"
-      },
-      {
         "label": "Contact Us",
         "href": "https://api.whatsapp.com/send?phone=6282170002201&text=Hi%20Fleedu%21"
       }
