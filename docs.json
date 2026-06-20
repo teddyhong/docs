@@ -27,7 +27,6 @@
       {
         "product": "What's New",
         "pages": [
-          "index",
           "whats-new"
         ]
       },
@@ -91,7 +90,12 @@
     ]
   },
   "navbar": {
-    "links": [],
+    "links": [
+      {
+        "label": "Hubungi Kami",
+        "href": "https://api.whatsapp.com/send?phone=6282170002201&text=Hi%20Fleedu%21"
+      }
+    ],
     "primary": {
       "type": "button",
       "label": "Get Free Demo",
