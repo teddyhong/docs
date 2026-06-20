@@ -19,73 +19,69 @@
     "eyebrows": "section"
   },
   "navigation": {
-    "directory": "card",
-    "products": [
-      {
-        "product": "What's New",
-        "pages": [
-          "whats-new"
-        ]
-      },
-      {
-        "product": "Untitled Product",
-        "tabs": [
-          {
-            "tab": "Guide",
-            "hidden": true,
-            "groups": [
-              {
-                "group": "Getting Started",
-                "hidden": true,
-                "pages": [
-                  "introduction",
-                  "getting-started/register",
-                  "getting-started/setup-school"
-                ]
-              },
-              {
-                "group": "Administration",
-                "hidden": true,
-                "pages": [
-                  "administration/student-enrollment",
-                  "administration/class-management",
-                  "administration/staff-roles"
-                ]
-              },
-              {
-                "group": "Billing & Payments",
-                "hidden": true,
-                "pages": [
-                  "billing/invoices",
-                  "billing/recurring-billing",
-                  "billing/payment-verification"
-                ]
-              },
-              {
-                "group": "Activities & Development",
-                "hidden": true,
-                "pages": [
-                  "activities/daily-activities",
-                  "activities/lesson-plans",
-                  "activities/milestone-tracking",
-                  "activities/attendance"
-                ]
-              },
-              {
-                "group": "Parent Engagement",
-                "hidden": true,
-                "pages": [
-                  "parents/parent-app",
-                  "parents/activity-feed",
-                  "parents/invite-family"
-                ]
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
+  "directory": "card",
+  "tabs": [
+    {
+      "tab": "What's New",
+      "pages": [
+        "index",
+        "whats-new"
+      ]
+    },
+    {
+      "tab": "Guide",
+      "hidden": true,
+      "groups": [
+        {
+          "group": "Getting Started",
+          "hidden": true,
+          "pages": [
+            "introduction",
+            "getting-started/register",
+            "getting-started/setup-school"
+          ]
+        },
+        {
+          "group": "Administration",
+          "hidden": true,
+          "pages": [
+            "administration/student-enrollment",
+            "administration/class-management",
+            "administration/staff-roles"
+          ]
+        },
+        {
+          "group": "Billing & Payments",
+          "hidden": true,
+          "pages": [
+            "billing/invoices",
+            "billing/recurring-billing",
+            "billing/payment-verification"
+          ]
+        },
+        {
+          "group": "Activities & Development",
+          "hidden": true,
+          "pages": [
+            "activities/daily-activities",
+            "activities/lesson-plans",
+            "activities/milestone-tracking",
+            "activities/attendance"
+          ]
+        },
+        {
+          "group": "Parent Engagement",
+          "hidden": true,
+          "pages": [
+            "parents/parent-app",
+            "parents/activity-feed",
+            "parents/invite-family"
+          ]
+        }
+      ]
+    }
+  ]
+},
   "navbar": {
     "links": [
       {
