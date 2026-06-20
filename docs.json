@@ -27,8 +27,8 @@
       {
         "product": "What's New",
         "pages": [
-          "whats-new",
-          "index"
+          "index",
+          "whats-new"
         ]
       },
       {
@@ -108,8 +108,8 @@
     "strict": true
   },
   "logo": {
-    "light": "/images/Purple_70x70_rounded.png",
-    "dark": "/images/Purple_70x70_rounded.png",
+    "light": "/images/fleedu-logo-55px.png",
+    "dark": "/images/fleedu-logo-55px.png",
     "href": "https://fleedu.com"
   }
 }
