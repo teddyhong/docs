@@ -19,15 +19,14 @@
     "eyebrows": "section"
   },
   "navigation": {
-  "directory": "card",
-  "tabs": [
-    {
-      "tab": "What's New",
-      "pages": [
-        "index",
-        "whats-new"
-      ]
-    },
+    "directory": "card",
+    "tabs": [
+      {
+        "tab": "What's New",
+        "pages": [
+          "whats-new"
+        ]
+      },
     {
       "tab": "Guide",
       "hidden": true,
