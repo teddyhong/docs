@@ -104,8 +104,8 @@
     "strict": true
   },
   "logo": {
-    "light": "/images/preview_padded.png",
-    "dark": "/images/preview_padded.png",
+    "light": "/images/android-chrome-512x512.png",
+    "dark": "/images/android-chrome-512x512.png",
     "href": "https://fleedu.com"
   }
 }
